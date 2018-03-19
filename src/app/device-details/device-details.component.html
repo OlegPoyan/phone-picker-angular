@@ -1,0 +1,37 @@
+<div *ngIf="device">
+
+  <h2>{{device.name | uppercase}} Details</h2>
+  <div><span>_id: </span>{{device._id}}</div>
+  <div><span>slug: </span>{{device.slug}}</div>
+  <div><span>title: </span>{{device.title}}</div>
+  <div><span>description: </span>{{device.description}}</div>
+  <div><span>os: </span>{{device.os}}</div>
+  <div><span>display: </span>{{device.display}}</div>
+  <div><span>front_camera: </span>{{device.front_camera}}</div>
+  <div><span>back_camera: </span>{{device.back_camera}}</div>
+  <div><span>cpu: </span>{{device.cpu}}</div>
+  <div><span>gpu: </span>{{device.gpu}}</div>
+  <div><span>ram: </span>{{device.ram}}</div>
+  <div><span>storage: </span>{{device.storage}}</div>
+  <div><span>length: </span>{{device.length}}</div>
+  <div><span>width: </span>{{device.width}}</div>
+  <div><span>height: </span>{{device.height}}</div>
+  <div><span>weight: </span>{{device.weight}}</div>
+  <div><span>colors: </span>{{device.colors}}</div>
+  <div><span>speaker: </span>{{device.speaker}}</div>
+  <div><span>microphone: </span>{{device.microphone}}</div>
+  <div><span>battery: </span>{{device.battery}}</div>
+  <div><span>wifi: </span>{{device.wifi}}</div>
+  <div><span>bt: </span>{{device.bt}}</div>
+  <div><span>nfc: </span>{{device.nfc}}</div>
+  <div><span>location: </span>{{device.location}}</div>
+  <div><span>network: </span>{{device.network}}</div>
+  <div><span>sensors: </span>{{device.sensors}}</div>
+  <div><span>usb: </span>{{device.usb}}</div>
+  <div><span>sim: </span>{{device.sim}}</div>
+  <div><span>body: </span>{{device.body}}</div>
+  <div><span>screen: </span>{{device.screen}}</div>
+  <div><span>other: </span>{{device.other}}</div>
+
+</div>
+<button (click)="goBack()">go back</button>
