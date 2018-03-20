@@ -9,7 +9,10 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "assets/select.png",
+        "assets/compare.png",
+        "assets/decision.png",
+        "assets/smartphone.ico"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,6 +22,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],

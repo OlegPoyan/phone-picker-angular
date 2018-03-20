@@ -1,14 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>PhonePickerAngular</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="description" content="PhonePicker">
+<meta name="keywords" content="PhonePicker">
+<meta name="author" content="PhonePicker Team">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>PhonePickerMEAN</title>
+<base href="/">
+
+<link rel="icon" type="image/x-icon" href="smartphone.ico">
 </head>
 <body>
-  <app-root></app-root>
+
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navigation" role="navigation">
+
+<div class="container-fluid text-center">
+
+<h1 class="w-100 text-white" onclick="location.href='#';">PhonePicker</h1>
+
+</div>
+
+</nav>
+
+<main class="site-content" role="main">
+
+<!-- ----------- center description block ----------- -->
+
+<div class="container-fluid main-overlay">
+
+	<div class="col-md-8 offset-md-2 overlay-wrap">
+		<div class="col-12 overlay-block">
+			<h2 class="col-12 text-white text-center text-uppercase">how it works</h2>
+			<div class="col-12 circle-wrapper">
+			
+				<div class="circle-base type-one">
+					<img class="img-responsive" src="/assets/select.png" alt="" />
+				</div>
+				
+				<hr class="arrow">
+				
+				<div class="arrow-wrapper">
+					<span class="oi oi-chevron-right"></span>
+				</div>
+				
+				<hr class="arrow">
+				
+				<div class="circle-base type-two">
+					<img class="img-responsive" src="/assets/compare.png" alt="" />
+				</div>
+				
+				<hr class="arrow">
+				
+				<div class="arrow-wrapper">
+					<span class="oi oi-chevron-right"></span>
+				</div>
+				
+				<hr class="arrow">
+				
+				<div class="circle-base type-three">
+					<img class="img-responsive" src="/assets/decision.png" alt="" />
+				</div>
+			</div>
+			
+			<div class="col-12 d-flex text-wrapper">
+				<div class="col type-one-text">
+					<h4 class="text-white text-uppercase">select devices</h4>
+				</div>
+				<div class="col text-center type-two-text">
+					<h4 class="text-white text-uppercase">compare</h4>
+				</div>
+				<div class="col type-three-text">
+					<h4 class="text-white text-uppercase">make decision</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</main>
+
+	<app-root></app-root>
+
 </body>
 </html>
+
