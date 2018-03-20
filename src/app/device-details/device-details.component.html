@@ -1,37 +1,160 @@
 <div *ngIf="device">
 
   <h2>{{device.name | uppercase}} Details</h2>
-  <div><span>_id: </span>{{device._id}}</div>
-  <div><span>slug: </span>{{device.slug}}</div>
-  <div><span>title: </span>{{device.title}}</div>
-  <div><span>description: </span>{{device.description}}</div>
-  <div><span>os: </span>{{device.os}}</div>
-  <div><span>display: </span>{{device.display}}</div>
-  <div><span>front_camera: </span>{{device.front_camera}}</div>
-  <div><span>back_camera: </span>{{device.back_camera}}</div>
-  <div><span>cpu: </span>{{device.cpu}}</div>
-  <div><span>gpu: </span>{{device.gpu}}</div>
-  <div><span>ram: </span>{{device.ram}}</div>
-  <div><span>storage: </span>{{device.storage}}</div>
-  <div><span>length: </span>{{device.length}}</div>
-  <div><span>width: </span>{{device.width}}</div>
-  <div><span>height: </span>{{device.height}}</div>
-  <div><span>weight: </span>{{device.weight}}</div>
-  <div><span>colors: </span>{{device.colors}}</div>
-  <div><span>speaker: </span>{{device.speaker}}</div>
-  <div><span>microphone: </span>{{device.microphone}}</div>
-  <div><span>battery: </span>{{device.battery}}</div>
-  <div><span>wifi: </span>{{device.wifi}}</div>
-  <div><span>bt: </span>{{device.bt}}</div>
-  <div><span>nfc: </span>{{device.nfc}}</div>
-  <div><span>location: </span>{{device.location}}</div>
-  <div><span>network: </span>{{device.network}}</div>
-  <div><span>sensors: </span>{{device.sensors}}</div>
-  <div><span>usb: </span>{{device.usb}}</div>
-  <div><span>sim: </span>{{device.sim}}</div>
-  <div><span>body: </span>{{device.body}}</div>
-  <div><span>screen: </span>{{device.screen}}</div>
-  <div><span>other: </span>{{device.other}}</div>
 
-</div>
+
+<table class="table table-striped table-bordered table-hover">
+
+ <thead class="thead-dark">
+    <tr>
+      <th  scope="col"><span>title: </span>{{device.title}}</th>
+	</tr>
+</thead>
+
+ <tbody>
+  <tr>
+      <th scope="row"><span>id:</span></th>
+	<td>{{device._id}}</td>
+	</tr>
+
+    <tr>
+      <th scope="row"><span>slug:</span></th>
+	<td>{{device.slug}}</td>
+	</tr>
+    <tr>
+      <th scope="row"><span>description:</span></th>
+	<td>{{device.description}}</td>
+	</tr>
+
+    <tr>
+      <th scope="row"><span>os:</span></th>
+	<td>{{device.os}}</td>
+	</tr>
+   <tr>
+      <th scope="row"><span>display:</span></th>
+	<td>{{device.display}}</td>
+	</tr>
+
+  <tr>
+      <th scope="row"><span>front_camera:</span></th>
+	<td>{{device.front_camera}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>back_camera:</span></th>
+	<td>{{device.back_camera}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>cpu:</span></th>
+	<td>{{device.cpu}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>gpu:</span></th>
+	<td>{{device.gpu}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>storage:</span></th>
+	<td>{{device.storage}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>ram:</span></th>
+	<td>{{device.ram}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>length:</span></th>
+	<td>{{device.length}}</td>
+	</tr>
+ <tr>
+      <th scope="row"><span>width:</span></th>
+	<td>{{device.width}}</td>
+	</tr>
+
+ <tr>
+      <th scope="row"><span>height:</span></th>
+	<td>{{device.height}}</td>
+	</tr>
+  <tr>
+      <th scope="row"><span>weight:</span></th>
+	<td>{{device.weight}}</td>
+	</tr>
+ <tr>
+      <th scope="row"><span>color:</span></th>
+	<td>{{device.color}}</td>
+</tr>
+
+ <tr>
+      <th scope="row"><span>speaker:</span></th>
+	<td>{{device.speaker}}</td>
+</tr>
+
+<tr>
+      <th scope="row"><span>microphone:</span></th>
+	<td>{{device.microphone}}</td>
+</tr>
+
+ <tr>
+      <th scope="row"><span>battery:</span></th>
+	<td>{{device.battery}}</td>
+</tr>
+
+<tr>
+      <th scope="row"><span>wifi:</span></th>
+	<td>{{device.wifi}}</td>
+</tr>
+
+<tr>
+    <th scope="row"><span>bluetooth:</span></th>
+	<td>{{device.bt}}</td>
+</tr>
+
+<tr>
+    <th scope="row"><span>nfc:</span></th>
+	<td>{{device.nfc}}</td>
+</tr>
+
+ <tr>
+    <th scope="row"><span>location:</span></th>
+	<td>{{device.location}}</td>
+</tr>
+
+  <tr>
+    <th scope="row"><span>network:</span></th>
+	<td>{{device.network}}</td>
+</tr>
+
+ <tr>
+      <th scope="row"><span>sensors:</span></th>
+	<td>{{device.sensors}}</td>
+</tr>
+
+ <tr>
+      <th scope="row"><span>usb:</span></th>
+	<td>{{device.usb}}</td>
+</tr>
+
+  <tr>
+      <th scope="row"><span>sim:</span></th>
+	<td>{{device.sim}}</td>
+</tr>
+	
+<tr>
+      <th scope="row"><span>body:</span></th>
+	<td>{{device.body}}</td>
+</tr>
+
+ <tr>
+      <th scope="row"><span>screen:</span></th>
+	<td>{{device.screen}}</td>
+</tr>
+	
+  <tr>
+      <th scope="row"><span>other:</span></th>
+	<td>{{device.other}}</td>
+</tr>
+	
+</tbody>
+</table>
+
+</div> 
+
+
 <button (click)="goBack()">go back</button>
