@@ -1,7 +1,7 @@
 <h2 class="display-4 text-center mt-3 mb-3">Devices</h2>
 
 <div class="container-fluid">
-  <a *ngFor="let device of devices" class="col"
+  <a *ngFor="let device of devices" class="col d-block"
       routerLink="/devices/{{device.slug}}">
     <div class="">
       <h4 class="mt-3 mb-3">{{device.slug}}</h4>

@@ -1,15 +1,16 @@
 <div *ngIf="device">
 
-  <h2>{{device.name | uppercase}} Details</h2>
-
+  <h2 class="text-center display-4 mt-3">{{ device.title }} Details</h2>
+  
+  <div class="container">
 
 <table class="table table-striped table-bordered table-hover">
 
- <thead class="thead-dark">
-    <tr>
-      <th  scope="col"><span>title: </span>{{device.title}}</th>
-	</tr>
-</thead>
+<!--  <thead class="thead-dark"> -->
+<!--     <tr> -->
+<!--       <th  scope="col"><span>title: </span>{{device.title}}</th> -->
+<!-- 	</tr> -->
+<!-- </thead> -->
 
  <tbody>
   <tr>
@@ -154,7 +155,12 @@
 </tbody>
 </table>
 
-</div> 
+</div>
 
 
-<button (click)="goBack()">go back</button>
+</div>
+
+<div class="container mt-3 text-center"><button (click)="goBack()">go back</button></div>
+
+
+
