@@ -20,7 +20,11 @@ export class DevicesService {
   ) { }
 
   getDevices(): Observable<Device[]> {
-    return this.http.get<Device[]>(this.devicesUrl)
+    return this.http.get<Device[]>(this.devicesUrl, {
+      params: {
+        limit: '50'
+      }
+    })
     .pipe(
       map(devices => devices['phones']),
       tap(devices => this.log('fetched devices')),

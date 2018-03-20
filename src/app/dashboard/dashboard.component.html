@@ -1,9 +1,15 @@
 <h3 class="display-3 mt-3 mb-3">Top Phones</h3>
-<div class="grid grid-pad d-flex">
-  <a *ngFor="let device of devices" class="btn col"
-      routerLink="/devices/{{device.slug}}">
-    <div class="module hero">
-      <h4>{{device.title}}</h4>
-    </div>
-  </a>
+
+<div class="container-fluid">
+  <div class="row">
+    <a *ngFor="let device of devices" class="col d-block"
+        routerLink="/devices/{{device.slug}}">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{device.thumbnail}}" alt="{{device.title}}">
+        <div class="card-body">
+          <h4 class="mt-3 mb-3">{{device.title}}</h4>
+        </div>
+      </div>
+    </a>
+  </div>
 </div>

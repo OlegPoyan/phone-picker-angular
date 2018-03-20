@@ -1,159 +1,142 @@
 <div *ngIf="device">
 
   <h2 class="text-center display-4 mt-3">{{ device.title }} Details</h2>
-  
+
   <div class="container">
 
-<table class="table table-striped table-bordered table-hover">
+    <table class="table table-striped table-bordered table-hover">
 
-<!--  <thead class="thead-dark"> -->
-<!--     <tr> -->
-<!--       <th  scope="col"><span>title: </span>{{device.title}}</th> -->
-<!-- 	</tr> -->
-<!-- </thead> -->
+        <thead class="thead-dark">
+          <tr>
+            <th  scope="col"><span>title: </span>{{device.title}}</th>
+          </tr>
+        </thead>
 
- <tbody>
-  <tr>
-      <th scope="row"><span>id:</span></th>
-	<td>{{device._id}}</td>
-	</tr>
+        <tbody>
+          <tr>
+            <th scope="row"><span>id:</span></th>
+            <td>{{device._id}}</td>
+          </tr>
 
-    <tr>
-      <th scope="row"><span>slug:</span></th>
-	<td>{{device.slug}}</td>
-	</tr>
-    <tr>
-      <th scope="row"><span>description:</span></th>
-	<td>{{device.description}}</td>
-	</tr>
+          <tr>
+            <th scope="row"><span>title:</span></th>
+            <td>{{device.slug}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>os:</span></th>
+            <td>{{device.os}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>display:</span></th>
+            <td>{{device.display}}</td>
+          </tr>
 
-    <tr>
-      <th scope="row"><span>os:</span></th>
-	<td>{{device.os}}</td>
-	</tr>
-   <tr>
-      <th scope="row"><span>display:</span></th>
-	<td>{{device.display}}</td>
-	</tr>
+          <tr>
+            <th scope="row"><span>front_camera:</span></th>
+            <td>{{device.front_camera}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>back_camera:</span></th>
+            <td>{{device.back_camera}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>cpu:</span></th>
+            <td>{{device.cpu}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>gpu:</span></th>
+            <td>{{device.gpu}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>storage:</span></th>
+            <td>{{device.storage}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>ram:</span></th>
+            <td>{{device.ram}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>length:</span></th>
+            <td>{{device.length}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>width:</span></th>
+            <td>{{device.width}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>height:</span></th>
+            <td>{{device.depth}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>weight:</span></th>
+            <td>{{device.weight}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>colors:</span></th>
+            <td>{{device.colors}}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>battery:</span></th>
+            <td>{{device.battery}}</td>
+          </tr>
 
-  <tr>
-      <th scope="row"><span>front_camera:</span></th>
-	<td>{{device.front_camera}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>back_camera:</span></th>
-	<td>{{device.back_camera}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>cpu:</span></th>
-	<td>{{device.cpu}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>gpu:</span></th>
-	<td>{{device.gpu}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>storage:</span></th>
-	<td>{{device.storage}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>ram:</span></th>
-	<td>{{device.ram}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>length:</span></th>
-	<td>{{device.length}}</td>
-	</tr>
- <tr>
-      <th scope="row"><span>width:</span></th>
-	<td>{{device.width}}</td>
-	</tr>
+          <tr>
+            <th scope="row"><span>wifi:</span></th>
+            <td>{{device.wifi}}</td>
+          </tr>
 
- <tr>
-      <th scope="row"><span>height:</span></th>
-	<td>{{device.height}}</td>
-	</tr>
-  <tr>
-      <th scope="row"><span>weight:</span></th>
-	<td>{{device.weight}}</td>
-	</tr>
- <tr>
-      <th scope="row"><span>color:</span></th>
-	<td>{{device.color}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>bluetooth:</span></th>
+            <td>{{device.bt}}</td>
+          </tr>
 
- <tr>
-      <th scope="row"><span>speaker:</span></th>
-	<td>{{device.speaker}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>nfc:</span></th>
+            <td>{{device.nfc}}</td>
+          </tr>
 
-<tr>
-      <th scope="row"><span>microphone:</span></th>
-	<td>{{device.microphone}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>location:</span></th>
+            <td>{{device.location}}</td>
+          </tr>
 
- <tr>
-      <th scope="row"><span>battery:</span></th>
-	<td>{{device.battery}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>network:</span></th>
+            <td>{{device.network}}</td>
+          </tr>
 
-<tr>
-      <th scope="row"><span>wifi:</span></th>
-	<td>{{device.wifi}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>sensors:</span></th>
+            <td>{{device.sensors}}</td>
+          </tr>
 
-<tr>
-    <th scope="row"><span>bluetooth:</span></th>
-	<td>{{device.bt}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>usb:</span></th>
+            <td>{{device.usb}}</td>
+          </tr>
 
-<tr>
-    <th scope="row"><span>nfc:</span></th>
-	<td>{{device.nfc}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>sim:</span></th>
+            <td>{{device.sim}}</td>
+          </tr>
 
- <tr>
-    <th scope="row"><span>location:</span></th>
-	<td>{{device.location}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>body:</span></th>
+            <td>{{device.body}}</td>
+          </tr>
 
-  <tr>
-    <th scope="row"><span>network:</span></th>
-	<td>{{device.network}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>screen:</span></th>
+            <td>{{device.screen}}</td>
+          </tr>
 
- <tr>
-      <th scope="row"><span>sensors:</span></th>
-	<td>{{device.sensors}}</td>
-</tr>
+          <tr>
+            <th scope="row"><span>price</span></th>
+            <td>{{device.price}}</td>
+          </tr>
 
- <tr>
-      <th scope="row"><span>usb:</span></th>
-	<td>{{device.usb}}</td>
-</tr>
-
-  <tr>
-      <th scope="row"><span>sim:</span></th>
-	<td>{{device.sim}}</td>
-</tr>
-	
-<tr>
-      <th scope="row"><span>body:</span></th>
-	<td>{{device.body}}</td>
-</tr>
-
- <tr>
-      <th scope="row"><span>screen:</span></th>
-	<td>{{device.screen}}</td>
-</tr>
-	
-  <tr>
-      <th scope="row"><span>other:</span></th>
-	<td>{{device.other}}</td>
-</tr>
-	
-</tbody>
-</table>
+        </tbody>
+      </table>
 
 </div>
 
@@ -161,6 +144,3 @@
 </div>
 
 <div class="container mt-3 text-center"><button (click)="goBack()">go back</button></div>
-
-
-
