@@ -1,6 +1,6 @@
-<h3>Top Phones</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let device of devices" class="col-1-4"
+<h3 class="display-3 mt-3 mb-3">Top Phones</h3>
+<div class="grid grid-pad d-flex">
+  <a *ngFor="let device of devices" class="btn col"
       routerLink="/devices/{{device.slug}}">
     <div class="module hero">
       <h4>{{device.title}}</h4>
