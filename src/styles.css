@@ -22,17 +22,12 @@ main { margin-top: 70px; }
 	background: rgba(136,136,136,0.8);
 }
 
-.circle-wrapper,
-.arrow-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .circle-wrapper {
 	margin-top: 5%;
 	padding: 0 4%;
 }
+
+.fa.fa-angle-right { font-size: 19pt; }
 
 .circle-base {
 	width: 100px;
@@ -65,19 +60,19 @@ main { margin-top: 70px; }
 
 .text-wrapper { margin-top: 2%; }
 
-.text-wrapper div { overflow: visible; }
+/* .text-wrapper div { overflow: visible; } */
 
-.type-one-text h4 {
-	margin-left: -4%;
-	white-space: nowrap;
-}
+/* .type-one-text h4 { */
+/* 	margin-left: -4%; */
+/* 	white-space: nowrap; */
+/* } */
 
 /* .type-two-text h4 {	margin-left: 36%; } */
 
-.type-three-text h4 {
-	text-align: right;
-	white-space: nowrap;
-}
+/* .type-three-text h4 { */
+/* 	text-align: right; */
+/* 	white-space: nowrap; */
+/* } */
 
 /*
 ***************** 

@@ -1,13 +1,15 @@
 <h2 class="display-4 text-center mt-3 mb-3">Devices</h2>
 
+<br />
+
 <div class="container-fluid">
   <div class="row">
-    <a *ngFor="let device of devices" class="col d-block"
+    <a *ngFor="let device of devices" class="col mb-4 d-flex align-items-center justify-content-center"
         routerLink="/devices/{{device.slug}}">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{device.thumbnail}}" alt="{{device.title}}">
+        <img class="card-img-top scale-75" src="{{device.thumbnail}}" alt="{{device.title}}">
         <div class="card-body">
-          <h4 class="mt-3 mb-3">{{device.title}}</h4>
+          <h4 class="d-flex align-items-center justify-content-center mt-3 mb-3 text-center equal-height">{{device.title}}</h4>
         </div>
       </div>
     </a>
