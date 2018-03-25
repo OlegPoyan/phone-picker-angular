@@ -14,6 +14,7 @@ import { DevicesService } from './devices.service';
 import { MessageService } from './message.service';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DeviceDetailsComponent,
     DevicesComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
