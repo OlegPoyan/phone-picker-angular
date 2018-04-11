@@ -26,6 +26,8 @@ h4 { position: relative; }
 
 .grid-pad > [class*='col-']:last-of-type { padding-right: 20px; }
 
+@media (min-width: 768px) { h3 { font-size: 3rem; } }
+
 @media (max-width: 600px) {
   .module {
     font-size: 10px;

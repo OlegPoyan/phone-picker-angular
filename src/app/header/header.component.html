@@ -1,4 +1,68 @@
-<nav class="nav fixed-top pt-3 pl-3">
-  <a class="btn nav-link active text-white" href="#" routerLink="dashboard">Home</a>
-  <a class="btn nav-link text-white" href="#" routerLink="devices">Devices</a>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navigation" role="navigation">
+
+<div class="container-fluid text-center">
+
+	<div class="col-5 text-left">
+		<h2 class="d-inline-block text-white p-2">PhonePicker</h2>
+	</div>
+
+	<div class="col-6 d-block text-right d-sm-flex justify-content-around">
+		<a class="btn col-4 nav-link d-none d-sm-block text-white" href="#" routerLink="dashboard">Home</a>
+	  	<a class="btn col-4 nav-link d-none d-sm-block text-white" href="#" routerLink="devices">Devices</a>
+	  	
+		<div ngbDropdown placement="bottom-right" class="d-inline-block d-sm-none">
+			<button class="navbar-toggler float-right d-sm-none" type="button" id="dropdownNavigation" ngbDropdownToggle>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div ngbDropdownMenu aria-labelledby="dropdownNavigation">
+				<button class="dropdown-item" routerLink="dashboard">Home</button>
+				<button class="dropdown-item" routerLink="devices">Devices</button>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 </nav>
+
+
+
+
+<!--     <div ngbDropdown class="d-inline-block d-sm-none"> -->
+<!--       <button class="navbar-toggler float-right d-sm-none" type="button" id="dropdownNavigation" ngbDropdownToggle> -->
+<!--       	<span class="navbar-toggler-icon"></span> -->
+<!--       </button> -->
+<!--       <div ngbDropdownMenu aria-labelledby="dropdownNavigation"> -->
+<!--         <button class="dropdown-item" href="#" routerLink="dashboard">Home</button> -->
+<!--         <button class="dropdown-item" href="#" routerLink="devices">Devices</button> -->
+<!--       </div> -->
+<!--     </div> -->
+  
+  
+<!--   <button (click)="toggleCollapse()" class="navbar-toggler float-right d-sm-none" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle Navigation"> -->
+<!-- 	  		<span class="navbar-toggler-icon"></span> -->
+<!-- 	  	</button> -->
+<!-- 	  	<div id="navbarDropdown" class="collapse navbar-collapse" [class.show]="show"> -->
+<!-- 	  		<ul class="navbar-nav mr-auto"> -->
+<!-- 	  			<li class="nav-item"> -->
+<!-- 	  				<a class="nav-link" href="#" routerLink="dashboard">Home</a> -->
+<!-- 	  			</li> -->
+<!-- 	  			<li class="nav-item"> -->
+<!-- 	  				<a class="nav-link" href="#" routerLink="devices">Devices</a> -->
+<!-- 	  			</li> -->
+<!-- 	  		</ul> -->
+<!-- 	  	</div> -->
+	  	
+	  	
+<!-- <div class="row"> -->
+<!--   <div class="col"> -->
+<!--     <div ngbDropdown class="d-inline-block"> -->
+<!--       <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button> -->
+<!--       <div ngbDropdownMenu aria-labelledby="dropdownBasic1"> -->
+<!--         <button class="dropdown-item">Action - 1</button> -->
+<!--         <button class="dropdown-item">Another Action</button> -->
+<!--         <button class="dropdown-item">Something else is here</button> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->

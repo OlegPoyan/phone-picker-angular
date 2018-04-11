@@ -1,7 +1,13 @@
 .bg-light { background-color: rgba(0,0,0,.03); }
 
 /*
-***************** media 799
+***************** media 768
+*/
+
+@media screen and (min-width: 768px) {  }
+
+/*
+***************** media 992
 */
 
 @media screen and (min-width: 992px) {

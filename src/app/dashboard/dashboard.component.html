@@ -1,4 +1,4 @@
-<h3 class="display-3 text-center mt-3 mb-3">Top Phones</h3>
+<h3 class="text-center mt-3 mb-3">Top Phones</h3>
 
 <br />
 
@@ -7,7 +7,7 @@
     <a *ngFor="let device of devices" class="col d-flex justify-content-center align-items-center mb-4"
         routerLink="/devices/{{device.slug}}">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top scale-75" src="{{device.thumbnail}}" alt="{{device.title}}">
+        <img class="card-img-top scale-75" src="{{ device.thumbnail }}" alt="{{device.title}}">
         <div class="card-body">
           <h4 class="d-flex align-items-center justify-content-center mt-3 mb-3 text-center equal-height">{{device.title}}</h4>
         </div>

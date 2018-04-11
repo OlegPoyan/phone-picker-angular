@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#navigation h1 { cursor: pointer; }
+#navigation h2 { cursor: pointer; }
 
 /*
 ***************** image section
@@ -79,10 +79,6 @@ main { margin-top: 70px; }
 */
 
 
-
-
-
-
 /*
 ***************** media 1199
 */
@@ -100,4 +96,15 @@ main { margin-top: 70px; }
 	.arrow { width: 8%; }
 	.type-one-text h4 { margin-left: -15%; }
 	h4 { font-size: 1.25rem; }
+}
+
+/*
+***************** media 650
+*/
+
+@media screen and (max-width: 650px) {
+	.circle-base {
+		width: 60px;
+		height: 60px;
+	}
 }
