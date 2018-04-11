@@ -12,7 +12,7 @@ import { Device } from './device';
 @Injectable()
 export class DevicesService {
 
-  private devicesUrl = 'http://107.138.166.202:3000/api/devices'
+  private devicesUrl = 'http://localhost:3000/api/devices'
 
   constructor(
     private http: HttpClient,
