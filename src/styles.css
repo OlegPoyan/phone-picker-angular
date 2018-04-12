@@ -60,23 +60,31 @@ main { margin-top: 70px; }
 
 .text-wrapper { margin-top: 2%; }
 
-/* .text-wrapper div { overflow: visible; } */
-
-/* .type-one-text h4 { */
-/* 	margin-left: -4%; */
-/* 	white-space: nowrap; */
+/* #back-to-top { */
+/* 	position: fixed; */
+/* 	left: auto; */
+/* 	right: 20px; */
+/* 	top: auto; */
+/* 	bottom: 20px; */
+/* 	outline: none; */
+/* 	overflow: hidden; */
+/* 	color: #FFFFFF; */
+/* 	text-align: center; */
+/* 	background-color: #5B6F7B; */
+/* 	height: 40px; */
+/* 	width: 40px; */
+/* 	line-height: 40px; */
+/* 	font-size: 14px; */
+/* 	border-radius: 2px; */
+/* 	cursor: pointer; */
+/* 	transition: all 0.3s linear; */
+/* 	z-index: 999999; */
+/* 	opacity: 0; */
 /* } */
 
-/* .type-two-text h4 {	margin-left: 36%; } */
+/* #back-to-top.show { opacity: 1; } */
 
-/* .type-three-text h4 { */
-/* 	text-align: right; */
-/* 	white-space: nowrap; */
-/* } */
-
-/*
-***************** 
-*/
+/* #back-to-top:hover { background-color: #AD0000; } */
 
 
 /*
@@ -108,3 +116,5 @@ main { margin-top: 70px; }
 		height: 60px;
 	}
 }
+
+
