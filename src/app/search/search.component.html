@@ -5,8 +5,8 @@
 	
 	<form action="search" method="post">
 		<div class="d-flex col-12 my-3">
-			<input type="text" name="phoneSearch" value="" placeholder="Search phone">
-			<button type="submit">
+			<input type="text" name="phoneSearch" value="" placeholder="Search phone" #searchTerm>
+			<button type="submit" (click)="setSearchTerm(searchTerm.value)">
 			<i class="fa fa-search fa-1x"></i>
 			</button>
 		</div>

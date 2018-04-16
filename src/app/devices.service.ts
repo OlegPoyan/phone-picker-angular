@@ -19,11 +19,9 @@ export class DevicesService {
     private messageService: MessageService
   ) { }
 
-  getDevices(): Observable<Device[]> {
+  getDevices(parameters): Observable<Device[]> {
     return this.http.get<Device[]>(this.devicesUrl, {
-      params: {
-        limit: '50'
-      }
+      params: Object.assign({limit: '50'}, parameters)
     })
     .pipe(
       map(devices => devices['phones']),

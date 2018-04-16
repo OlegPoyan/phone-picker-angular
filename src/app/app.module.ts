@@ -16,6 +16,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
+import { SearchViewComponent } from './search-view/search-view.component';
+import { FilterService } from './filter.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { SearchComponent } from './search/search.component';
     MessagesComponent,
     DashboardComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    SearchViewComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { SearchComponent } from './search/search.component';
   ],
   providers: [
     DevicesService,
-    MessageService
+    MessageService,
+    FilterService
   ],
   bootstrap: [AppComponent]
 })

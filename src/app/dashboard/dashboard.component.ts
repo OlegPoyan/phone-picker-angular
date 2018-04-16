@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getDevices(): void {
-    this.devicesService.getDevices()
+    this.devicesService.getDevices({})
       .subscribe(devices => this.devices = devices.slice(0, 4));
   }
 
