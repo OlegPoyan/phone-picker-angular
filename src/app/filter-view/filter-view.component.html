@@ -1,0 +1,38 @@
+<h3 class="text-center mt-3 mb-3">Filter Options</h3>
+
+<hr>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="select-container">
+        <p>OS: </p>
+        <select (change)="filterParams.os=$event.target.value">
+            <option value=""></option>
+            <option value="Android">Android</option>
+            <option value="iOS">iOS</option>
+            <option value="Windows">Windows</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+      <div class="select-container">
+        <p>Storage: </p>
+        <select (change)="filterParams.storage=$event.target.value">
+            <option value=""></option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+            <option value="128">128</option>
+            <option value="256">256</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-success" (click)="applyFilter()">Filter</button>
+    </div>
+  </div>
+</div>

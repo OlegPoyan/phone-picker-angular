@@ -4,13 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { DevicesComponent } from './devices/devices.component';
 import { DeviceDetailsComponent } from './device-details/device-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FilterViewComponent } from './filter-view/filter-view.component';
 import { SearchViewComponent } from './search-view/search-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'devices', component: DevicesComponent },
-  { path: 'devices/:params', component: DevicesComponent },
+  { path: 'devices/search', component: SearchViewComponent},
+  { path: 'filter', component: FilterViewComponent},
   { path: 'devices/device/:slug', component: DeviceDetailsComponent }
 ];
 

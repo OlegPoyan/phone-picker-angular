@@ -3,28 +3,31 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Device } from '../device';
 import { DevicesService } from '../devices.service';
 import { FilterService } from '../filter.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
-  selector: 'app-devices',
-  templateUrl: './devices.component.html',
-  styleUrls: ['./devices.component.css']
+  selector: 'app-search-view',
+  templateUrl: './search-view.component.html',
+  styleUrls: ['./search-view.component.css']
 })
-export class DevicesComponent implements OnInit {
+
+export class SearchViewComponent implements OnInit {
   devices: Device[] = [];
-  params = {title: ''};
 
   constructor(private devicesService: DevicesService,
               private filterService: FilterService,
               private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.getDevices();
+    this.route.queryParams.subscribe((params: Params) => {
+      this.getDevices(params);
+    });
     console.log(this.devices);
   }
 
-  getDevices(): void {
-    this.devicesService.getDevices({})
+  getDevices(params: Params): void {
+    console.log(params);
+    this.devicesService.getDevices(params)
     .subscribe(devices => this.devices = devices);
   }
 }

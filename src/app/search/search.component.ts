@@ -17,6 +17,6 @@ export class SearchComponent implements OnInit {
   }
 
   setSearchTerm(searchTerm: string) {
-    this.router.navigateByUrl('/devices/' + searchTerm);
+    this.router.navigate(['/devices/search'], { queryParams: { title: searchTerm }});
   }
 }
