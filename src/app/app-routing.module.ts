@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DevicesComponent } from './devices/devices.component';
 import { DeviceDetailsComponent } from './device-details/device-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SearchViewComponent } from './search-view/search-view.component';
+// import { SearchViewComponent } from './search-view/search-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
