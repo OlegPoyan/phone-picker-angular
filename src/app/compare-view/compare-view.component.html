@@ -1,22 +1,13 @@
-<div class="overflowGrid">
-<div class="deviceStyle" *ngFor="let device of devices">
+<div class="d-flex col-12 flex-wrap">
+<div class="col-12 col-sm-6 col-lg-4 mb-3" *ngFor="let device of devices">
 
-<h2 class="">{{ device.title }} Details</h2>
+<h2 class="text-center">{{ device.title }} Details</h2>
 
 <div class="container-fluid">
 
-
-<!-- Image -->
-<!--
-	<div class="col-md-12 col-lg-6 d-flex align-items-center justify-content-center bg-light">
-		<div class="image-wrap position-sticky top-10-lg">
-			<img class="scale-one-and-half-lg py-3 py-lg-0" src="{{ device.thumbnail }}" alt="{{ device.title }}" />
-		</div>
-	</div> -->
-	
-	<div class="col-md-12 col-lg-6">
+<div class="col-12 col-md-10 offset-md-1">
 		
-		<h4 class="mt-3 mb-3 text-center text-lg-left">Top Features:</h4>
+		<h4 class="mt-3 mb-3 text-center">Top Features:</h4>
 		<br />
 		
 <!-- Specs row 1 -->
@@ -25,31 +16,25 @@
 		
 <!-- Material -->
 		
-			<div class="col-6 border-right border-bottom">
+			<div class="col-12 border-bottom">
 				<div class="">
 					<h5 class="text-center text-uppercase mt-3 mb-3">Material</h5>
 					<p class="text-center">{{ device.body }}</p>
 				</div>
-			</div><!-- /col-6.border-right -->
+			</div><!-- /col-12.border-bottom -->
 
 <!-- Storage -->
 			
-			<div class="col-6 border-bottom">
+			<div class="col-12 border-bottom">
 				<div class="">
 					<h5 class="text-center text-uppercase mt-3 mb-3">Storage</h5>
 					<p class="text-center">{{ device.storage }}</p>
 				</div>
-			</div><!-- /col-6 -->
-		
-		</div><!-- /row -->
-		
-<!-- Specs row 2 -->
-		
-		<div class="row d-flex">
+			</div><!-- /col-12 -->
 		
 <!-- Rear Camera -->
 		
-			<div class="col-6 border-right border-bottom">
+			<div class="col-12 border-bottom">
 				<div class="">
 					<h5 class="text-center text-uppercase mt-3 mb-3">Rear Camera</h5>
 					<p class="text-center">{{ device.back_camera }}</p>
@@ -58,36 +43,30 @@
 			
 <!-- Front Camera -->
 			
-			<div class="col-6 border-bottom">
+			<div class="col-12 border-bottom">
 				<div class="">
 					<h5 class="text-center text-uppercase mt-3 mb-3">Front Camera</h5>
 					<p class="text-center">{{ device.front_camera }}</p>
 				</div>
-			</div><!-- /col-6 -->
-		
-		</div><!-- /row -->
-		
-<!-- Specs row 3 -->
-		
-		<div class="row d-flex">
+			</div><!-- /col-12 -->
 		
 <!-- Display -->
 		
-			<div class="col-6 border-right border-bottom">
+			<div class="col-12 border-bottom">
 				<div class="">
 					<h5 class="text-center text-uppercase mt-3 mb-3">Display</h5>
 					<p class="text-center">{{ device.display }}</p>
 				</div>
-			</div><!-- /col-6.border-right -->
+			</div><!-- /col-12.border-right -->
 
 <!-- Battery -->
 			
-			<div class="col-6 border-bottom">
+			<div class="col-12 border-bottom">
 				<div class="">
 					<h5 class="text-center text-uppercase mt-3 mb-3">Battery</h5>
 					<p class="text-center">{{ device.battery }}</p>
 				</div>
-			</div><!-- /col-6 -->
+			</div><!-- /col-12 -->
 		
 		</div><!-- /row -->
 
@@ -132,7 +111,7 @@
 		
 		</div><!-- /row -->
 		
-	</div><!-- /col-6 -->
+	</div><!-- /col-12 -->
 	
 </div> <!-- /container -->
 
