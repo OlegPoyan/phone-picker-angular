@@ -1,17 +1,17 @@
 <div class="col-12 my-3">
 
-<div class="col-12 my-3">
-	<h4 class="col-12">Search phone</h4>
+<div class="col-4 offset-4 my-3">
+	<h4 class="col-12 text-center">Search phone</h4>
 	
 	<form action="search" method="post">
-		<div class="d-flex col-12 my-3">
+		<div class="d-flex col-12 my-3 justify-content-center">
 			<input type="text" name="phoneSearch" value="" placeholder="Search phone" #searchTerm>
 			<button type="submit" (click)="setSearchTerm(searchTerm.value)">
 			<i class="fa fa-search fa-1x"></i>
 			</button>
 		</div>
 		
-		<div class="col-12 my-3">
+		<div class="col-12 my-3 text-center">
 			<a routerLink="filter">Advanced Search</a>
 		</div>
 	</form>
