@@ -22,7 +22,7 @@ export class FilterViewComponent implements OnInit {
     width: '',
     depth: '',
     weight: '',
-    colors: '',
+    color: '',
     battery: '',
     location: '',
     screen: '',
