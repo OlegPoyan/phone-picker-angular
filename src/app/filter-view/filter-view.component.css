@@ -3,14 +3,27 @@ select {
     -moz-appearance: none;
     appearance: none;
     padding: .5em;
-    background: #efefef;
-    border: none;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
     border-radius: 3px;
     padding: 1em 2em 1em 1em;
     font-size: 1em;
+    box-shadow: 0 1px 1px #CCCCCC;
 }
-.select-container {position:relative; display: inline;}
-.select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
+
+.select-container {
+	position: relative;
+	display: inline;
+}
+
+.select-container:after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
 .select-container:after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -19,7 +32,38 @@ select {
     border-top: 8px solid black;
     opacity: 0.5;
 }
-select::-ms-expand {
-    display: none;
-}
+
+select::-ms-expand { display: none; }
+
 .select-container.no-after:after { display: none; }
+
+/*
+***************** media 991
+*/
+
+@media screen and (max-width: 991px) {
+	input,
+	select { max-width: 90%; }
+}
+
+/*
+***************** media 767
+*/
+
+@media screen and (max-width: 767px) { h5 { font-size: 1rem; } } 
+
+/*
+***************** media 575
+*/
+
+@media screen and (max-width: 575px) {
+	.row > div:nth-of-type(1),
+	.row > div:nth-of-type(2) { margin-bottom: 20px; }
+}
+
+
+/*
+***************** media 455
+*/
+
+@media screen and (max-width: 455px) { .dbl-line-455 { line-height: 38px; } }

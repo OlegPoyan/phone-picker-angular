@@ -4,15 +4,15 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 order-1 text-center">
       <div class="select-container no-after">
-        <p>OS: </p>
+        <h5>OS: </h5>
          <input type="text" name="osSearch" [(ngModel)]="filterParams.os" placeholder="OS">        
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 order-3 order-sm-2 text-center">
       <div class="select-container">
-        <p>Storage: </p>
+        <h5>Storage: </h5>
         <select (change)="filterParams.storage=$event.target.value">
             <option value=""></option>
             <option value="8">8 GB</option>
@@ -24,9 +24,9 @@
         </select>
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 order-4 order-sm-3 text-center">
       <div class="select-container">
-        <p>RAM: </p>
+        <h5>RAM: </h5>
         <select (change)="filterParams.ram=$event.target.value">
             <option value=""></option>
             <option value="128 MB">128 MB</option>
@@ -41,18 +41,18 @@
         </select>
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 order-2 order-sm-4 text-center">
       <div class="select-container no-after">
-        <p>Display: </p>
+        <h5>Display: </h5>
         <input type="text" name="displaySearch" [(ngModel)]="filterParams.display" placeholder="display search">
       </div>
     </div>
   </div>
   <hr>
   <div class="row">
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container">
-        <p>Front Camera: </p>
+        <h5>Front Camera: </h5>
         <select (change)="filterParams.front_camera=$event.target.value">
             <option value=""></option>
             <option value="1.2 MP">1.2 MP</option>
@@ -68,9 +68,9 @@
         </select>
       </div>
     </div>   
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container">
-        <p>Back Camera: </p>
+        <h5>Back Camera: </h5>
         <select (change)="filterParams.back_camera=$event.target.value">
             <option value=""></option>
             <option value="2 MP">2 MP</option>
@@ -88,64 +88,58 @@
         </select>
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container no-after">
-        <p>CPU: </p>
+        <h5>CPU: </h5>
         <input type="text" name="cpuSearch" [(ngModel)]="filterParams.cpu" placeholder="cpu">
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container no-after">
-        <p>GPU: </p>
+        <h5>GPU: </h5>
         <input type="text" name="gpuSearch" [(ngModel)]="filterParams.gpu" placeholder="gpu">
       </div>
     </div>
   </div>
   <hr>
   <div class="row">
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container no-after">
-        <p>Length of Phone: </p>
+        <h5>Length of Phone: </h5>
         <input type="text" name="lengthSearch" [(ngModel)]="filterParams.length" placeholder="Length of Phone">
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container no-after">
-        <p>Width of Phone: </p>
+        <h5>Width of Phone: </h5>
         <input type="text" name="widthSearch" [(ngModel)]="filterParams.width" placeholder="Width of Phone">
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container no-after">
-        <p>Depth of Phone: </p>
-        <input type="text" name="depthSearch" class="no-after" [(ngModel)]="filterParams.depth" placeholder="Depth of Phone">
+        <h5>Depth of Phone: </h5>
+        <input type="text" name="depthSearch" [(ngModel)]="filterParams.depth" placeholder="Depth of Phone">
       </div>
     </div>
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 text-center">
       <div class="select-container no-after">
-        <p>Weight of Phone: </p>
+        <h5>Weight of Phone: </h5>
         <input type="text" name="weigthSearch" [(ngModel)]="filterParams.weight" placeholder="Weight of Phone">
       </div>
     </div>
   </div>
   <hr>
   <div class="row">
-    <div class="col text-center">
+    <div class="col-6 col-sm-3 order-1 text-center">
       <div class="select-container no-after">
-        <p>Color of Phone: </p>
+        <h5>Color of Phone: </h5>
         <input type="text" name="colorSearch" [(ngModel)]="filterParams.color" placeholder="Color of Phone">
       </div>
     </div>
-    <div class="col text-center">
-      <div class="select-container no-after">
-        <p>Battery: </p>
-        <input type="text" name="batterySearch" [(ngModel)]="filterParams.battery" placeholder="Battery">
-      </div>
-    </div>
-    <div class="col text-center">
+    <div class="col-6 offset-3 offset-sm-0 order-3 order-sm-2 text-center">
       <div class="select-container">
-        <p>Location Options: </p>
-        <select (change)="filterParams.location=$event.target.value">
+        <h5>Location Options: </h5>
+        <select class="mb-3" (change)="filterParams.location=$event.target.value">
             <option value=""></option>
             <option value="No">No</option>
             <option value="Yes, with A-GPS">Yes, with A-GPS</option>
@@ -158,12 +152,18 @@
         </select>
       </div>
     </div>
+    <div class="col-6 col-sm-3 order-2 order-sm-3 text-center">
+      <div class="select-container no-after">
+        <h5>Battery: </h5>
+        <input type="text" name="batterySearch" [(ngModel)]="filterParams.battery" placeholder="Battery">
+      </div>
+    </div>
   </div>
   <hr>
   <div class="row">
-    <div class="col text-center">
+    <div class="col-6 text-center">
       <div class="select-container">
-        <p>Screen of Phone: </p>
+        <h5 class="dbl-line-455">Screen of Phone: </h5>
         <select (change)="filterParams.screen=$event.target.value">
           <option value=""></option>
           <option value="Corning Gorilla Glass 3">Corning Gorilla Glass 3</option>
@@ -177,9 +177,9 @@
         </select>
       </div>
     </div>  
-    <div class="col text-center">
+    <div class="col-6 text-center">
       <div class="select-container">
-        <p>Network Options of Phone:</p>
+        <h5>Network Options of Phone:</h5>
         <select (change)="filterParams.network=$event.target.value">
           <option value=""></option>
           <option value="GSM">GSM</option>
@@ -196,7 +196,7 @@
   <br>
   <div class="row">
     <div class="col text-center">
-      <button class="btn btn-success" (click)="applyFilter()">Filter</button>
+      <button class="btn btn-lg btn-outline-primary" (click)="applyFilter()">Filter</button>
     </div>
   </div>
 </div>

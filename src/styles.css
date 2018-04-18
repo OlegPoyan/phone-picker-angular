@@ -39,7 +39,7 @@ main { margin-top: 70px; }
 
 .type-two { background: #7ECB5A; }
 
-.type-three { background: #0080C0; }
+.type-three { background: #007BFF; }
 
 .circle-base img { transform: scale(0.6); }
 
@@ -60,41 +60,7 @@ main { margin-top: 70px; }
 
 .text-wrapper { margin-top: 2%; }
 
-/* #back-to-top { */
-/* 	position: fixed; */
-/* 	left: auto; */
-/* 	right: 20px; */
-/* 	top: auto; */
-/* 	bottom: 20px; */
-/* 	outline: none; */
-/* 	overflow: hidden; */
-/* 	color: #FFFFFF; */
-/* 	text-align: center; */
-/* 	background-color: #5B6F7B; */
-/* 	height: 40px; */
-/* 	width: 40px; */
-/* 	line-height: 40px; */
-/* 	font-size: 14px; */
-/* 	border-radius: 2px; */
-/* 	cursor: pointer; */
-/* 	transition: all 0.3s linear; */
-/* 	z-index: 999999; */
-/* 	opacity: 0; */
-/* } */
-
-/* #back-to-top.show { opacity: 1; } */
-
-/* #back-to-top:hover { background-color: #AD0000; } */
-
-
-/*
-***************** media 1199
-*/
-
-@media screen and (max-width: 1199px) {
-	
-}
-
+.card { box-shadow: 0 2px 2px #CCCCCC; }
 
 /*
 ***************** media 799
