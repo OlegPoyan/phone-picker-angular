@@ -19,6 +19,7 @@ import { SearchComponent } from './search/search.component';
 import { FilterService } from './filter.service';
 import { FilterViewComponent } from './filter-view/filter-view.component';
 import { SearchViewComponent } from './search-view/search-view.component';
+import { CompareViewComponent } from './compare-view/compare-view.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SearchViewComponent } from './search-view/search-view.component';
     HeaderComponent,
     SearchComponent,
     FilterViewComponent,
-    SearchViewComponent
+    SearchViewComponent,
+    CompareViewComponent
   ],
   imports: [
     BrowserModule,

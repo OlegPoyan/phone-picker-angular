@@ -6,7 +6,10 @@
 
 [class*='col-']:last-of-type { padding-right: 0; }
 
-a { text-decoration: none; }
+/* a { text-decoration: none; } */
+/* .deviceContainer {
+  text-decoration: none;
+} */
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;

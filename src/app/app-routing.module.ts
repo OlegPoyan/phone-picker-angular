@@ -6,6 +6,7 @@ import { DeviceDetailsComponent } from './device-details/device-details.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FilterViewComponent } from './filter-view/filter-view.component';
 import { SearchViewComponent } from './search-view/search-view.component';
+import { CompareViewComponent } from './compare-view/compare-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'devices', component: DevicesComponent },
   { path: 'devices/search', component: SearchViewComponent},
   { path: 'filter', component: FilterViewComponent},
-  { path: 'devices/device/:slug', component: DeviceDetailsComponent }
+  { path: 'devices/device/:slug', component: DeviceDetailsComponent },
+  { path: 'devices/compare', component: CompareViewComponent }
 ];
 
 @NgModule({
