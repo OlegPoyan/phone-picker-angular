@@ -20,6 +20,7 @@ import { FilterService } from './filter.service';
 import { FilterViewComponent } from './filter-view/filter-view.component';
 import { SearchViewComponent } from './search-view/search-view.component';
 import { CompareViewComponent } from './compare-view/compare-view.component';
+import { QuizViewComponent } from './quiz-view/quiz-view.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CompareViewComponent } from './compare-view/compare-view.component';
     SearchComponent,
     FilterViewComponent,
     SearchViewComponent,
-    CompareViewComponent
+    CompareViewComponent,
+    QuizViewComponent
   ],
   imports: [
     BrowserModule,
