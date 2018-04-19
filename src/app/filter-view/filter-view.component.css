@@ -27,11 +27,15 @@ select {
 .select-container:after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    top: .3em;
-    right: .75em;
+    top: 4em;
+    left: 2em;
     border-top: 8px solid black;
     opacity: 0.5;
 }
+
+.select-container.arrow-fix-1:after { left: 12em; }
+
+.select-container.arrow-fix-2:after { left: 10em; }
 
 select::-ms-expand { display: none; }
 
