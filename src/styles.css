@@ -2,6 +2,8 @@
 
 #navigation h2 { cursor: pointer; }
 
+.dropdown-toggle::after { display: none; }
+
 /*
 ***************** image section
 */
@@ -62,6 +64,9 @@ main { margin-top: 70px; }
 
 .card { box-shadow: 0 2px 2px #CCCCCC; }
 
+app-compare-view .card,
+app-device-details .card { box-shadow: none; }
+
 /*
 ***************** media 799
 */
@@ -82,5 +87,11 @@ main { margin-top: 70px; }
 		height: 60px;
 	}
 }
+
+/*
+***************** media 420
+*/
+
+@media screen and (max-width: 420px) { app-messages .container div { font-size: 0.75rem; } }
 
 

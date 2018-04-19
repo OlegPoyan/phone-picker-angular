@@ -1,10 +1,11 @@
 <h3 class="text-center mt-3 mb-3">Search Results</h3>
 
 <br />
-<button class="btn btn-primary" (click)="routeToCompare()">Compare</button>
+<div class="col-12 text-center">
+	<button class="btn btn-outline-primary" (click)="routeToCompare()">Compare</button>
+</div>
 <br />
-<div class="container-fluid">
-  <div class="row">
+<div class="container-fluid d-flex flex-wrap">
     <div *ngFor="let device of devices" class="col mb-4 d-flex align-items-center justify-content-center">
       <div class="card" style="width: 18rem;">
         <input type="checkbox" (change)="compareArrManager(device.slug)">
@@ -16,5 +17,4 @@
         </div>
       </div>
     </div>
-  </div>
 </div>
