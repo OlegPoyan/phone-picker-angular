@@ -5,7 +5,7 @@
 <div class="container-fluid">
   <div class="row">
     <a *ngFor="let device of devices" class="col d-flex justify-content-center align-items-center mb-4"
-        routerLink="/devices/{{device.slug}}">
+        routerLink="/devices/device/{{device.slug}}">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top scale-75" src="{{ device.thumbnail }}" alt="{{device.title}}">
         <div class="card-body">
