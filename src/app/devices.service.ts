@@ -12,7 +12,7 @@ import { Device } from './device';
 @Injectable()
 export class DevicesService {
 
-  private devicesUrl = 'http://localhost:3000/api/devices' || 'https://gentle-springs-27762.herokuapp.com/api/devices';
+  private devicesUrl = 'https://gentle-springs-27762.herokuapp.com/api/devices';
 
   constructor(
     private http: HttpClient,
